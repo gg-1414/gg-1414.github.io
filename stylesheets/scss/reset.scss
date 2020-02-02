@@ -75,7 +75,12 @@ h4 {
 }
 
 p {
+	font-size: scale(1.75);
 	line-height: 1.2;
+
+	@include media(xs-min) {
+		font-size: scale(2);
+	}
 }
 
 a {

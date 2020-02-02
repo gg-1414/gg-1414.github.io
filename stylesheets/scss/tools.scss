@@ -12,35 +12,35 @@ $screen-xl: 1440px;
 $screen-xxl: 1640px;
 
 @mixin media($class) {
-  @if $class == mobile-only {
+  @if $class == xs-max {
     @media (max-width: #{$screen-xs - 1}) { @content; }
   }
   
-  @else if $class == small-only {
+  @else if $class == sm-max {
     @media (max-width: #{$screen-sm - 1}) { @content; }
   }
 
-  @else if $class == xs {
+  @else if $class == xs-min {
     @media (min-width: #{$screen-xs}) { @content; }
   }
 
-  @else if $class == sm {
+  @else if $class == sm-min {
     @media (min-width: #{$screen-sm}) { @content; }
   }
 
-  @else if $class == md {
+  @else if $class == md-min {
     @media (min-width: #{$screen-md}) { @content; }
   }
 
-  @else if $class == lg {
+  @else if $class == lg-min {
     @media (min-width: #{$screen-lg}) { @content; }
   }
 
-  @else if $class == xl {
+  @else if $class == xl-min {
     @media (min-width: #{$screen-xl}) { @content; }
   }
 
-  @else if $class == xxl {
+  @else if $class == xxl-min {
     @media (min-width: #{$screen-xxl}) { @content; }
   }
 

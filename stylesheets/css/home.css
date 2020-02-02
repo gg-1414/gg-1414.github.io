@@ -11,7 +11,7 @@
     .projects-section .project .title h4 {
       flex: 1; }
   .projects-section .project .text .description {
-    padding: 20px 0 8px; }
+    padding: 20px 0 10px; }
   .projects-section .project .text .stack {
     padding: 12px 0;
     border-top: 1px solid black; }

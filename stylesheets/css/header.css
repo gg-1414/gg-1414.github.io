@@ -11,21 +11,34 @@ header {
   header .name {
     grid-area: name;
     white-space: nowrap; }
+    @media (max-width: 399px) {
+      header .name {
+        font-size: 14px; } }
   header .title, header .socials-list {
     font-size: 12px;
     display: flex; }
+    @media (min-width: 400px) {
+      header .title, header .socials-list {
+        font-size: 16px; } }
   header .title {
     grid-area: title;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
     border-left: 1px solid black;
-    border-right: 1px solid black;
-    height: 100%; }
+    border-right: 1px solid black; }
+    header .title span:first-child {
+      margin-right: 8px; }
   header img {
     grid-area: icon; }
   header .socials-list {
     grid-area: socials;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    justify-content: space-evenly; }
+    justify-content: space-between; }
+    @media (min-width: 700px) {
+      header .socials-list {
+        justify-content: space-evenly; } }
 
 /*# sourceMappingURL=header.css.map */
