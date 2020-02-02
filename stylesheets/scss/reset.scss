@@ -71,7 +71,11 @@ video {
 }
 
 h4 {
-  font-size: scale(3); 
+	font-size: scale(3); 
+	
+	@include media(sm-min) {
+		font-size: scale(4); 
+	}
 }
 
 p {
@@ -80,6 +84,10 @@ p {
 
 	@include media(xs-min) {
 		font-size: scale(2);
+	}
+
+	@include media(sm-min) {
+		font-size: scale(2.5);
 	}
 }
 

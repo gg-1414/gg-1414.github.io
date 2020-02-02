@@ -4,8 +4,16 @@
   .project {
     margin-top: scale(7);
 
+    @include media(sm-min) {
+      margin-top: scale(9);
+    }
+
     &:first-child {
       margin-top: scale(5);
+
+      @include media(sm-min) {
+        margin-top: scale(6); 
+      }
     }
 
     &:last-child {
@@ -14,6 +22,10 @@
 
     .content, .links {
       padding: 0 scale(2);
+
+      @include media(sm-min) {
+        padding: 0 scale(3);
+      }
     }
   
     .title {
@@ -27,11 +39,20 @@
     .text {
       .description {
         padding: scale(2.5) 0 scale(1.25);
+
+        @include media(sm-min) {
+          max-width: 95%;
+          padding: scale(3) 0 scale(2);
+        }
       }
 
       .stack {
         padding: scale(1.5) 0;
         border-top: 1px solid black;
+
+        @include media(sm-min) {
+          padding: scale(2) 0;
+        }
       }
     }
 
@@ -50,6 +71,11 @@
 
         &:first-child {
           margin-right: scale(1.5);
+        }
+
+        @include media(sm-min) {
+          font-size: scale(2.5); 
+          line-height: 2;
         }
       }
     }

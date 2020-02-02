@@ -55,6 +55,9 @@ video {
 
 h4 {
   font-size: 24px; }
+  @media (min-width: 700px) {
+    h4 {
+      font-size: 32px; } }
 
 p {
   font-size: 14px;
@@ -62,6 +65,9 @@ p {
   @media (min-width: 400px) {
     p {
       font-size: 16px; } }
+  @media (min-width: 700px) {
+    p {
+      font-size: 20px; } }
 
 a {
   color: black; }
