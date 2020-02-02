@@ -19,6 +19,13 @@
     display: flex; }
     .projects-section .project .title h4 {
       flex: 1; }
+    .projects-section .project .title .display-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+      @media (min-width: 400px) {
+        .projects-section .project .title .display-btn img {
+          width: 20px; } }
   .projects-section .project .text .description {
     padding: 20px 0 10px; }
     @media (min-width: 700px) {

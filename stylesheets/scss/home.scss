@@ -34,6 +34,18 @@
       h4 {
         flex: 1;
       }
+
+      .display-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        img {
+          @include media(xs-min) {
+            width: scale(2.5);
+          }
+        }
+      }
     }
 
     .text {
