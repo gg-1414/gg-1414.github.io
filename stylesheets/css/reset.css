@@ -71,6 +71,8 @@ p {
 
 a {
   color: black; }
+  a:hover {
+    text-decoration: none; }
 
 .btn {
   line-height: 1.67;

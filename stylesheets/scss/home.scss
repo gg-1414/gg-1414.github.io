@@ -80,5 +80,49 @@
       }
     }
   }
+
+  // layout change for desktop 
+  @include media(md-min) {
+    .container {
+      padding: scale(4) scale(8);
+    }
+
+    .project {
+      display: grid; 
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-areas: 
+        "image content"
+        "image links";
+      grid-gap: 0 scale(4);
+      
+      .content {
+        grid-area: content;
+      }
+
+      .preview {
+        grid-area: image; 
+        align-self: center;
+      }
+
+      .links {
+        grid-area: links;
+        align-self: self-end;
+
+        .btn {
+          max-height: scale(6);
+          max-width: scale(29);
+
+          &:first-child {
+            margin-right: scale(2);
+          }
+        }
+      }
+
+      .down-arrow-icon {
+        display: none;
+      }
+    }
+  }
 }
 

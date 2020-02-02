@@ -6,6 +6,9 @@ header {
   align-items: center; }
   header > * {
     padding: 8px 16px; }
+    @media (min-width: 960px) {
+      header > * {
+        padding: 16px; } }
   header .name, header .socials-list li {
     display: inline-block; }
   header .name {

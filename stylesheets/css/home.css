@@ -44,5 +44,29 @@
         .projects-section .project .links .btn {
           font-size: 20px;
           line-height: 2; } }
+@media (min-width: 960px) {
+  .projects-section .container {
+    padding: 32px 64px; }
+  .projects-section .project {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "image content" "image links";
+    grid-gap: 0 32px; }
+    .projects-section .project .content {
+      grid-area: content; }
+    .projects-section .project .preview {
+      grid-area: image;
+      align-self: center; }
+    .projects-section .project .links {
+      grid-area: links;
+      align-self: self-end; }
+      .projects-section .project .links .btn {
+        max-height: 48px;
+        max-width: 232px; }
+        .projects-section .project .links .btn:first-child {
+          margin-right: 16px; }
+    .projects-section .project .down-arrow-icon {
+      display: none; } }
 
 /*# sourceMappingURL=home.css.map */
