@@ -1,0 +1,58 @@
+@import 'tools.scss';
+
+.projects-section {
+  .project {
+    margin-top: scale(7);
+
+    &:first-child {
+      margin-top: scale(5);
+    }
+
+    &:last-child {
+      margin-bottom: scale(9);
+    }
+
+    .content, .links {
+      padding: 0 scale(2);
+    }
+  
+    .title {
+      display: flex;
+  
+      h4 {
+        flex: 1;
+      }
+    }
+
+    .text {
+      .description {
+        padding: scale(2.5) 0 scale(1);
+      }
+
+      .stack {
+        padding: scale(1.5) 0;
+        border-top: 1px solid black;
+      }
+    }
+
+    .preview {
+      img {
+        width: 100%; 
+      }
+    }
+
+    .links {
+      padding-top: scale(2);
+      display: flex; 
+
+      .btn {
+        flex: 1;
+
+        &:first-child {
+          margin-right: scale(1.5);
+        }
+      }
+    }
+  }
+}
+

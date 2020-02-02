@@ -1,0 +1,48 @@
+@import 'tools.scss';
+
+header {
+  display: grid; 
+  grid-template-rows: auto auto;
+  grid-template-columns: min-content auto min-content;
+  grid-template-areas: 
+    "name title icon"
+    "socials socials socials";
+  align-items: center;
+
+  > * {
+    padding: scale(1) scale(2);
+  }
+
+  .name, .socials-list li {
+    display: inline-block; 
+  }
+  
+  .name {
+    grid-area: name;
+    white-space: nowrap;
+  }
+
+  .title, .socials-list {
+    font-size: scale(1.5);
+    display: flex; 
+  }
+
+  .title {
+    grid-area: title;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100%;
+  }
+
+  img {
+    grid-area: icon; 
+  }
+
+  .socials-list {
+    grid-area: socials;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-evenly;
+  }
+}

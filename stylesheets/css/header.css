@@ -1,0 +1,31 @@
+header {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: min-content auto min-content;
+  grid-template-areas: "name title icon" "socials socials socials";
+  align-items: center; }
+  header > * {
+    padding: 8px 16px; }
+  header .name, header .socials-list li {
+    display: inline-block; }
+  header .name {
+    grid-area: name;
+    white-space: nowrap; }
+  header .title, header .socials-list {
+    font-size: 12px;
+    display: flex; }
+  header .title {
+    grid-area: title;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100%; }
+  header img {
+    grid-area: icon; }
+  header .socials-list {
+    grid-area: socials;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-evenly; }
+
+/*# sourceMappingURL=header.css.map */

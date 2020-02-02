@@ -1,0 +1,28 @@
+.projects-section .project {
+  margin-top: 56px; }
+  .projects-section .project:first-child {
+    margin-top: 40px; }
+  .projects-section .project:last-child {
+    margin-bottom: 72px; }
+  .projects-section .project .content, .projects-section .project .links {
+    padding: 0 16px; }
+  .projects-section .project .title {
+    display: flex; }
+    .projects-section .project .title h4 {
+      flex: 1; }
+  .projects-section .project .text .description {
+    padding: 20px 0 8px; }
+  .projects-section .project .text .stack {
+    padding: 12px 0;
+    border-top: 1px solid black; }
+  .projects-section .project .preview img {
+    width: 100%; }
+  .projects-section .project .links {
+    padding-top: 16px;
+    display: flex; }
+    .projects-section .project .links .btn {
+      flex: 1; }
+      .projects-section .project .links .btn:first-child {
+        margin-right: 12px; }
+
+/*# sourceMappingURL=home.css.map */
