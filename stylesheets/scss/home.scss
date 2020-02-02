@@ -1,0 +1,128 @@
+@import 'tools.scss';
+
+.projects-section {
+  .project {
+    margin-top: scale(7);
+
+    @include media(sm-min) {
+      margin-top: scale(9);
+    }
+
+    &:first-child {
+      margin-top: scale(5);
+
+      @include media(sm-min) {
+        margin-top: scale(6); 
+      }
+    }
+
+    &:last-child {
+      margin-bottom: scale(9);
+    }
+
+    .content, .links {
+      padding: 0 scale(2);
+
+      @include media(sm-min) {
+        padding: 0 scale(3);
+      }
+    }
+  
+    .title {
+      display: flex;
+  
+      h4 {
+        flex: 1;
+      }
+    }
+
+    .text {
+      .description {
+        padding: scale(2.5) 0 scale(1.25);
+
+        @include media(sm-min) {
+          max-width: 95%;
+          padding: scale(3) 0 scale(2);
+        }
+      }
+
+      .stack {
+        padding: scale(1.5) 0;
+        border-top: 1px solid black;
+
+        @include media(sm-min) {
+          padding: scale(2) 0;
+        }
+      }
+    }
+
+    .preview {
+      img {
+        width: 100%; 
+      }
+    }
+
+    .links {
+      padding-top: scale(2);
+      display: flex; 
+
+      .btn {
+        flex: 1;
+
+        &:first-child {
+          margin-right: scale(1.5);
+        }
+
+        @include media(sm-min) {
+          font-size: scale(2.5); 
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  // layout change for desktop 
+  @include media(md-min) {
+    .container {
+      padding: scale(4) scale(8);
+    }
+
+    .project {
+      display: grid; 
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-areas: 
+        "image content"
+        "image links";
+      grid-gap: 0 scale(4);
+      
+      .content {
+        grid-area: content;
+      }
+
+      .preview {
+        grid-area: image; 
+        align-self: center;
+      }
+
+      .links {
+        grid-area: links;
+        align-self: self-end;
+
+        .btn {
+          max-height: scale(6);
+          max-width: scale(29);
+
+          &:first-child {
+            margin-right: scale(2);
+          }
+        }
+      }
+
+      .down-arrow-icon {
+        display: none;
+      }
+    }
+  }
+}
+
