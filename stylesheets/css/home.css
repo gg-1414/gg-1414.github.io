@@ -17,7 +17,10 @@
         padding: 0 24px; } }
   .projects-section .project .title {
     display: flex;
-    margin-bottom: 12px; }
+    margin-bottom: 16px; }
+    @media (min-width: 700px) {
+      .projects-section .project .title {
+        margin-bottom: 24px; } }
     .projects-section .project .title h4 {
       flex: 1; }
     .projects-section .project .title .display-btn {
@@ -29,21 +32,22 @@
         .projects-section .project .title .display-btn img {
           width: 20px; } }
   .projects-section .project .text .description {
-    padding: 20px 0 10px; }
+    padding: 0 0 10px; }
     @media (min-width: 700px) {
       .projects-section .project .text .description {
         max-width: 95%;
-        padding: 24px 0 16px; } }
+        padding: 0 0 16px; } }
   .projects-section .project .text .stack {
     padding: 12px 0;
     border-top: 1px solid black; }
     @media (min-width: 700px) {
       .projects-section .project .text .stack {
         padding: 16px 0; } }
-  .projects-section .project .collapsible-content {
-    display: none; }
-    .projects-section .project .collapsible-content.active {
-      display: block; }
+  @media (max-width: 959px) {
+    .projects-section .project .collapsible-content {
+      display: none; } }
+  .projects-section .project .collapsible-content.active {
+    display: block; }
   .projects-section .project .preview img {
     width: 100%; }
   .projects-section .project .links {

@@ -30,7 +30,11 @@
   
     .title {
       display: flex;
-      margin-bottom: scale(1.5);
+      margin-bottom: scale(2);
+
+      @include media(sm-min) {
+        margin-bottom: scale(3);
+      } 
   
       h4 {
         flex: 1;
@@ -52,11 +56,11 @@
 
     .text {
       .description {
-        padding: scale(2.5) 0 scale(1.25);
+        padding: 0 0 scale(1.25);
 
         @include media(sm-min) {
           max-width: 95%;
-          padding: scale(3) 0 scale(2);
+          padding: 0 0 scale(2);
         }
       }
 
@@ -71,7 +75,9 @@
     }
 
     .collapsible-content {
-      display: none;
+      @include media(md-max) {
+        display: none;
+      }
 
       &.active {
         display: block;
