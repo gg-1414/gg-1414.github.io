@@ -16,21 +16,38 @@
       .projects-section .project .content, .projects-section .project .links {
         padding: 0 24px; } }
   .projects-section .project .title {
-    display: flex; }
+    display: flex;
+    margin-bottom: 16px; }
+    @media (min-width: 700px) {
+      .projects-section .project .title {
+        margin-bottom: 24px; } }
     .projects-section .project .title h4 {
       flex: 1; }
+    .projects-section .project .title .display-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none; }
+      @media (min-width: 400px) {
+        .projects-section .project .title .display-btn img {
+          width: 20px; } }
   .projects-section .project .text .description {
-    padding: 20px 0 10px; }
+    padding: 0 0 10px; }
     @media (min-width: 700px) {
       .projects-section .project .text .description {
         max-width: 95%;
-        padding: 24px 0 16px; } }
+        padding: 0 0 16px; } }
   .projects-section .project .text .stack {
     padding: 12px 0;
     border-top: 1px solid black; }
     @media (min-width: 700px) {
       .projects-section .project .text .stack {
         padding: 16px 0; } }
+  @media (max-width: 959px) {
+    .projects-section .project .collapsible-content {
+      display: none; } }
+  .projects-section .project .collapsible-content.active {
+    display: block; }
   .projects-section .project .preview img {
     width: 100%; }
   .projects-section .project .links {
@@ -68,5 +85,16 @@
           margin-right: 16px; }
     .projects-section .project .down-arrow-icon {
       display: none; } }
+
+@keyframes conditionalOpen {
+  from {
+    transform: scaleY(0); }
+  to {
+    transform: scaleY(1); } }
+@keyframes conditionalClose {
+  from {
+    transform: scaleY(1); }
+  to {
+    transform: scaleY(0); } }
 
 /*# sourceMappingURL=home.css.map */

@@ -19,6 +19,10 @@ $screen-xxl: 1640px;
   @else if $class == sm-max {
     @media (max-width: #{$screen-sm - 1}) { @content; }
   }
+  
+  @else if $class == md-max {
+    @media (max-width: #{$screen-md - 1}) { @content; }
+  }
 
   @else if $class == xs-min {
     @media (min-width: #{$screen-xs}) { @content; }

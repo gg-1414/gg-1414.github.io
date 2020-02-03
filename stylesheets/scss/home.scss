@@ -30,19 +30,37 @@
   
     .title {
       display: flex;
+      margin-bottom: scale(2);
+
+      @include media(sm-min) {
+        margin-bottom: scale(3);
+      } 
   
       h4 {
         flex: 1;
+      }
+
+      .display-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        img {
+          @include media(xs-min) {
+            width: scale(2.5);
+          }
+        }
       }
     }
 
     .text {
       .description {
-        padding: scale(2.5) 0 scale(1.25);
+        padding: 0 0 scale(1.25);
 
         @include media(sm-min) {
           max-width: 95%;
-          padding: scale(3) 0 scale(2);
+          padding: 0 0 scale(2);
         }
       }
 
@@ -53,6 +71,16 @@
         @include media(sm-min) {
           padding: scale(2) 0;
         }
+      }
+    }
+
+    .collapsible-content {
+      @include media(md-max) {
+        display: none;
+      }
+
+      &.active {
+        display: block;
       }
     }
 
@@ -126,3 +154,24 @@
   }
 }
 
+@keyframes conditionalOpen {
+  from { 
+    transform: scaleY(0);
+    // height: 0; 
+  }
+  to { 
+    transform: scaleY(1);
+    // height: auto;
+  }
+}
+
+@keyframes conditionalClose {
+  from { 
+    transform: scaleY(1); 
+    // height: auto; 
+  }
+  to { 
+    transform: scaleY(0);
+    // height: 0;
+  }
+}

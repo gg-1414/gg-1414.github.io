@@ -99,6 +99,10 @@ a {
 	}
 }
 
+button > * {
+	pointer-events: none;
+}
+
 .btn {
 	line-height: 1.67;
 	text-decoration: none;
