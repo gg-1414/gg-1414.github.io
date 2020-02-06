@@ -1,5 +1,33 @@
 @import 'tools.scss';
 
+.light-theme {
+  header {
+    .title {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .socials-list {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+.dark-theme {
+  header {
+    .title {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    }
+
+    .socials-list {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
 header {
   display: grid; 
   grid-template-rows: auto auto;
@@ -10,10 +38,10 @@ header {
   align-items: center;
 
   > * {
-    padding: scale(1) scale(2);
+    padding: s(1) s(2);
 
     @include media(md-min) {
-      padding: scale(2);
+      padding: s(2);
     }
   }
 
@@ -26,16 +54,16 @@ header {
     white-space: nowrap;
     
     @include media(xs-max) {
-      font-size: scale(1.75);
+      font-size: s(1.75);
     }
   }
 
   .title, .socials-list {
-    font-size: scale(1.5);
+    font-size: s(1.5);
     display: flex; 
 
     @include media(xs-min) {
-      font-size: scale(2);
+      font-size: s(2);
     }
   }
 
@@ -45,22 +73,27 @@ header {
     flex-direction: row; 
     align-items: center;
     height: 100%;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    font-weight: normal;
 
     span:first-child {
-      margin-right: scale(1);
+      margin-right: s(1);
     }
   }
 
-  img {
-    grid-area: icon; 
+  #music-modal-btn {
+    background: transparent; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      grid-area: icon; 
+      border-radius: 50%;
+    }
   }
 
   .socials-list {
     grid-area: socials;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     justify-content: space-between;
 
     @include media(sm-min) {

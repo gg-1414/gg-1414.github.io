@@ -1,3 +1,17 @@
+.light-theme header .title {
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+.light-theme header .socials-list {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.dark-theme header .title {
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+.dark-theme header .socials-list {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; }
+
 header {
   display: grid;
   grid-template-rows: auto auto;
@@ -29,16 +43,19 @@ header {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    border-left: 1px solid black;
-    border-right: 1px solid black; }
+    font-weight: normal; }
     header .title span:first-child {
       margin-right: 8px; }
-  header img {
-    grid-area: icon; }
+  header #music-modal-btn {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer; }
+    header #music-modal-btn img {
+      grid-area: icon;
+      border-radius: 50%; }
   header .socials-list {
     grid-area: socials;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     justify-content: space-between; }
     @media (min-width: 700px) {
       header .socials-list {

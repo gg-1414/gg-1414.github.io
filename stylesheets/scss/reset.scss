@@ -36,6 +36,30 @@ body {
 	line-height: 1;
   font-size: 1em;
 	overflow-x: hidden;
+
+	&.light-theme {
+		h2, h4, p, a {
+			color: black;
+		} 
+
+		background: white;
+	}
+
+	&.dark-theme {
+		h2, h4, p, a {
+			color: white; 
+		} 
+	
+		.black-btn {
+			border: 1px solid white;
+		}
+
+		.white-btn {
+			border: none;
+		}
+
+		background: black;
+	}
 }
 
 ol, ul {
@@ -71,29 +95,28 @@ video {
 }
 
 h4 {
-	font-size: scale(3); 
+	font-size: s(3); 
 	
 	@include media(sm-min) {
-		font-size: scale(4); 
+		font-size: s(4); 
 	}
 }
 
 p {
-	font-size: scale(1.75);
+	font-size: s(1.75);
 	line-height: 1.2;
+	font-weight: 300;
 
 	@include media(xs-min) {
-		font-size: scale(2);
+		font-size: s(2);
 	}
 
 	@include media(sm-min) {
-		font-size: scale(2.5);
+		font-size: s(2.5);
 	}
 }
 
 a {
-	color: black;
-
 	&:hover {
 		text-decoration: none;
 	}
@@ -108,7 +131,8 @@ button > * {
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
-	padding: scale(.5) 0;
+	padding: s(.5) 0;
+	cursor: pointer; 
 
 	&.black-btn {
 		background: black;
@@ -118,5 +142,6 @@ button > * {
 	&.white-btn {
 		border: 1px solid black;
 		color: black;
+		background: white;
 	}
 }

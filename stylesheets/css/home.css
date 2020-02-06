@@ -1,3 +1,9 @@
+.light-theme .projects-section .project .stack {
+  border-top: 1px solid black; }
+
+.dark-theme .projects-section .project .stack {
+  border-top: 1px solid white; }
+
 .projects-section .project {
   margin-top: 56px; }
   @media (min-width: 700px) {
@@ -38,8 +44,7 @@
         max-width: 95%;
         padding: 0 0 16px; } }
   .projects-section .project .text .stack {
-    padding: 12px 0;
-    border-top: 1px solid black; }
+    padding: 12px 0; }
     @media (min-width: 700px) {
       .projects-section .project .text .stack {
         padding: 16px 0; } }
@@ -88,13 +93,13 @@
 
 @keyframes conditionalOpen {
   from {
-    transform: scaleY(0); }
+    transform: sY(0); }
   to {
-    transform: scaleY(1); } }
+    transform: sY(1); } }
 @keyframes conditionalClose {
   from {
-    transform: scaleY(1); }
+    transform: sY(1); }
   to {
-    transform: scaleY(0); } }
+    transform: sY(0); } }
 
 /*# sourceMappingURL=home.css.map */

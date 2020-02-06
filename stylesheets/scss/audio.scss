@@ -1,0 +1,17 @@
+@import 'tools.scss';
+@import 'keyframes.scss';
+
+#audio {
+  position: fixed; 
+  bottom: 0;
+  width: 100%; 
+  height: s(7);
+  border-top: 1px solid black;
+  background: #f2f3f4;
+  transform: scale(0);
+
+  &.active {
+    transform: scale(1);
+    animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+}

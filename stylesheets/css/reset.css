@@ -31,6 +31,18 @@ body {
   line-height: 1;
   font-size: 1em;
   overflow-x: hidden; }
+  body.light-theme {
+    background: white; }
+    body.light-theme h2, body.light-theme h4, body.light-theme p, body.light-theme a {
+      color: black; }
+  body.dark-theme {
+    background: black; }
+    body.dark-theme h2, body.dark-theme h4, body.dark-theme p, body.dark-theme a {
+      color: white; }
+    body.dark-theme .black-btn {
+      border: 1px solid white; }
+    body.dark-theme .white-btn {
+      border: none; }
 
 ol, ul {
   list-style: none; }
@@ -61,7 +73,8 @@ h4 {
 
 p {
   font-size: 14px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-weight: 300; }
   @media (min-width: 400px) {
     p {
       font-size: 16px; } }
@@ -69,10 +82,8 @@ p {
     p {
       font-size: 20px; } }
 
-a {
-  color: black; }
-  a:hover {
-    text-decoration: none; }
+a:hover {
+  text-decoration: none; }
 
 button > * {
   pointer-events: none; }
@@ -82,12 +93,14 @@ button > * {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding: 4px 0; }
+  padding: 4px 0;
+  cursor: pointer; }
   .btn.black-btn {
     background: black;
     color: white; }
   .btn.white-btn {
     border: 1px solid black;
-    color: black; }
+    color: black;
+    background: white; }
 
 /*# sourceMappingURL=reset.css.map */

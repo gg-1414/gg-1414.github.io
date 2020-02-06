@@ -1,8 +1,7 @@
-window.onload = function() {
+function handleCollapsibleContent() {
   const toggleBtn = document.getElementsByClassName('display-btn')
- 
+
   if (toggleBtn.length > 0) {
-    console.log(toggleBtn)
     for (let i = 0; i < toggleBtn.length; i++) {
       toggleBtn[i].onclick = function(e) {
         const content = this.closest('.content').querySelector('.collapsible-content')
@@ -12,13 +11,13 @@ window.onload = function() {
           this.classList.remove('active')
           content.classList.remove('active')
           // set icon to down arrow
-          this.querySelector('img').setAttribute('src', '../gg-1414.github.io/assets/icons/down-arrow.svg')
+          this.querySelector('img').setAttribute('src', './assets/icons/down-arrow.svg')
         } else {
           // add active class to button & content
           this.classList += ' active'
           content.classList += ' active'
           // set icon to up arrow
-          this.querySelector('img').setAttribute('src', '../gg-1414.github.io/assets/icons/up-arrow.svg')
+          this.querySelector('img').setAttribute('src', './assets/icons/up-arrow.svg')
         }
       }
     }
