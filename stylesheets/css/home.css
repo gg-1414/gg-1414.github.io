@@ -31,6 +31,8 @@
       @media (min-width: 400px) {
         .projects-section .project .title .display-btn img {
           width: 20px; } }
+  .projects-section .project .text .description, .projects-section .project .text .stack {
+    font-weight: 300; }
   .projects-section .project .text .description {
     padding: 0 0 10px; }
     @media (min-width: 700px) {

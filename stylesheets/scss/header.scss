@@ -29,8 +29,17 @@ header {
       font-size: scale(1.75);
     }
   }
+  
+  .title {
+    display: flex; 
+    font-size: scale(2);
 
-  .title, .socials-list {
+    @include media(xs-max) {
+      font-size: scale(1.75);
+    }
+  }
+
+  .socials-list {
     font-size: scale(1.5);
     display: flex; 
 

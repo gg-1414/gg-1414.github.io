@@ -17,11 +17,17 @@ header {
     @media (max-width: 399px) {
       header .name {
         font-size: 14px; } }
-  header .title, header .socials-list {
+  header .title {
+    display: flex;
+    font-size: 16px; }
+    @media (max-width: 399px) {
+      header .title {
+        font-size: 14px; } }
+  header .socials-list {
     font-size: 12px;
     display: flex; }
     @media (min-width: 400px) {
-      header .title, header .socials-list {
+      header .socials-list {
         font-size: 16px; } }
   header .title {
     grid-area: title;
