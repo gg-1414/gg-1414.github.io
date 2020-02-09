@@ -35,7 +35,7 @@ body.dark-theme {
   body.dark-theme audio {
     filter: invert(1); }
   body.dark-theme header, body.dark-theme header #toggle-theme {
-    background: black; }
+    background: #0d0c0b; }
   body.dark-theme header .name, body.dark-theme header .title, body.dark-theme header a {
     font-weight: 300; }
   body.dark-theme header .title {

@@ -9,7 +9,7 @@
       .projects-section .project:first-child {
         margin-top: 48px; } }
   .projects-section .project:last-child {
-    margin-bottom: 72px; }
+    margin-bottom: 80px; }
   .projects-section .project .content, .projects-section .project .links {
     padding: 0 16px; }
     @media (min-width: 700px) {
