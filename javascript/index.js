@@ -6,9 +6,17 @@ let toggleTextBtn
 // Audio 
 let audioEl
 const audioFiles = [
-  'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/CharlestheFirst-The-Reach-01-Kir.mp3',
-  'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/CharlestheFirst-The-Reach-02-Mer.mp3',
-  'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/CharlestheFirst-The-Reach-03-Pro.mp3'
+  'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/Kirra.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Burial/Archangel.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Flume/Ezra.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Flume/Hyperreal.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Bonobo/Kerala.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Phantogram/Dont_Move.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Evil+Needle/Sunday_Morning.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Mac+Miller/I_Can_See.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Ekali/Unfaith.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Bonobo/Second_Sun.mp3',
+  'https://audio-dls.s3.us-east-2.amazonaws.com/Mac+Miller/Good_News.mp3'
 ]
 let playlistIndex = 0
 
