@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: grid;
   grid-template-rows: auto auto;
@@ -17,12 +18,6 @@ header {
     @media (max-width: 399px) {
       header .name {
         font-size: 14px; } }
-  header .title {
-    display: flex;
-    font-size: 16px; }
-    @media (max-width: 399px) {
-      header .title {
-        font-size: 14px; } }
   header .socials-list {
     font-size: 12px;
     display: flex; }
@@ -31,20 +26,33 @@ header {
         font-size: 16px; } }
   header .title {
     grid-area: title;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     height: 100%;
-    border-left: 1px solid black;
-    border-right: 1px solid black; }
+    font-weight: normal;
+    font-size: 16px; }
+    @media (max-width: 399px) {
+      header .title {
+        font-size: 14px; } }
     header .title span:first-child {
       margin-right: 8px; }
-  header img {
-    grid-area: icon; }
+  header #toggle-theme {
+    border: none;
+    cursor: pointer;
+    grid-area: icon;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    padding: 0;
+    justify-content: center; }
+    header #toggle-theme:after {
+      content: "🌞";
+      font-size: 32px;
+      height: 34px; }
   header .socials-list {
     grid-area: socials;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     justify-content: space-between; }
     @media (min-width: 700px) {
       header .socials-list {

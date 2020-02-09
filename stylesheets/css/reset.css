@@ -53,6 +53,13 @@ table {
 video {
   width: 100%; }
 
+audio, button {
+  outline: none; }
+
+small {
+  font-size: 14px;
+  letter-spacing: 1.5px; }
+
 h4 {
   font-size: 24px; }
   @media (min-width: 700px) {
@@ -61,18 +68,17 @@ h4 {
 
 p {
   font-size: 14px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-weight: 300; }
   @media (min-width: 400px) {
     p {
       font-size: 16px; } }
   @media (min-width: 700px) {
     p {
-      font-size: 20px; } }
+      font-size: 18px; } }
 
-a {
-  color: black; }
-  a:hover {
-    text-decoration: none; }
+a:hover {
+  text-decoration: none; }
 
 button > * {
   pointer-events: none; }
@@ -82,12 +88,7 @@ button > * {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding: 4px 0; }
-  .btn.black-btn {
-    background: black;
-    color: white; }
-  .btn.white-btn {
-    border: 1px solid black;
-    color: black; }
+  padding: 4px 0;
+  cursor: pointer; }
 
 /*# sourceMappingURL=reset.css.map */

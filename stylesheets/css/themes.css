@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.btn.black-btn {
+  border: 1px solid #13131b;
+  background: #13131b;
+  color: #f2f3f4; }
+.btn.white-btn {
+  border: 1px solid #13131b;
+  color: #13131b;
+  background: #f2f3f4; }
+
+body.light-theme {
+  background: #f2f3f4; }
+  body.light-theme h2, body.light-theme h4, body.light-theme p, body.light-theme a {
+    color: #13131b; }
+  body.light-theme header .title {
+    border-left: 1px solid #13131b;
+    border-right: 1px solid #13131b; }
+  body.light-theme header #toggle-theme {
+    background: #f2f3f4; }
+    body.light-theme header #toggle-theme:after {
+      content: "🌚"; }
+  body.light-theme header .socials-list {
+    border-top: 1px solid #13131b;
+    border-bottom: 1px solid #13131b; }
+  body.light-theme .projects-section .stack {
+    border-top: 1px solid #13131b; }
+  body.light-theme .projects-section .preview video, body.light-theme .projects-section .preview img {
+    box-shadow: -2px 4px 11px 0px #111; }
+body.dark-theme {
+  background: #13131b; }
+  body.dark-theme h2, body.dark-theme h4, body.dark-theme p, body.dark-theme a {
+    color: #f2f3f4; }
+  body.dark-theme .black-btn, body.dark-theme .white-btn {
+    border: 1px solid #f2f3f4; }
+  body.dark-theme audio {
+    filter: invert(1); }
+  body.dark-theme header, body.dark-theme header #toggle-theme {
+    background: black; }
+  body.dark-theme header .name, body.dark-theme header .title, body.dark-theme header a {
+    font-weight: 300; }
+  body.dark-theme header .title {
+    border-left: 1px solid #f2f3f4;
+    border-right: 1px solid #f2f3f4; }
+  body.dark-theme header #toggle-theme:after {
+    content: "🌞"; }
+  body.dark-theme header .socials-list {
+    border-top: 1px solid #f2f3f4;
+    border-bottom: 1px solid #f2f3f4; }
+  body.dark-theme .projects-section .display-btn svg path {
+    fill: #f2f3f4; }
+  body.dark-theme .projects-section p {
+    font-weight: 200; }
+  body.dark-theme .projects-section .stack {
+    border-top: 1px solid white; }
+  body.dark-theme .projects-section .preview video, body.dark-theme .projects-section .preview img {
+    box-shadow: -2px 4px 11px 0px black; }
+
+/*# sourceMappingURL=themes.css.map */

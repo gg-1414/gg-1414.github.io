@@ -1,5 +1,5 @@
 // 8-point Scale
-@function scale($value) {
+@function s($value) {
   @return (8 * $value) +px; 
 }
 
