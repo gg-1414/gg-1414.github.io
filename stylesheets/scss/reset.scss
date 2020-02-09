@@ -95,10 +95,6 @@ p {
 	@include media(xs-min) {
 		font-size: s(2);
 	}
-
-	@include media(sm-min) {
-		font-size: s(2.25);
-	}
 }
 
 a {
