@@ -4,7 +4,7 @@ let toggleThemeBtn, modalContainer, playAudioBtn, closeBtn
 // Home
 let toggleTextBtn
 // Audio 
-let audioEl
+let audioEl, audioCtx, audioSrcNode, analyser, bufferLength, dataArray
 const audioFiles = [
   'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/Kirra.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Burial/Archangel.mp3',
@@ -23,7 +23,7 @@ let playlistIndex = 0
 let canvas, canvasCtx
 
 document.addEventListener("DOMContentLoaded", function() {
-  // DOM ELEMENTS
+  // DOM ELEMENTS & CONTEXT INITIALIZATION
   // Header
   toggleThemeBtn = document.querySelector('#toggle-theme')
   modalContainer = document.querySelector('#modal-container')
@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleTextBtn = document.getElementsByClassName('display-btn')
   // Audio 
   audioEl = document.querySelector('#audio')
+  audioCtx = new AudioContext()
   // Canvas 
   canvas = document.querySelector('canvas')
+  canvasCtx = canvas.getContext('2d')
 
   // EVENT LISTENERS
   window.onresize = onResize;
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function onResize() {
+  console.log('on resize! ')
   const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
