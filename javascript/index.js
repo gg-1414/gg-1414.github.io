@@ -54,11 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function toggleTheme() {
   const body = document.body
   if (body.classList.contains('light-theme')) {
-    body.classList = ''
-    body.classList += 'dark-theme'
+    body.classList = 'dark-theme'
   } else {
-    body.classList = ''
-    body.classList += 'light-theme'
+    body.classList = 'light-theme'
   }
 }
 
