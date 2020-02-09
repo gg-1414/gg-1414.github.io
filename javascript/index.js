@@ -19,6 +19,8 @@ const audioFiles = [
   'https://audio-dls.s3.us-east-2.amazonaws.com/Mac+Miller/Good_News.mp3'
 ]
 let playlistIndex = 0
+// Canvas
+let canvas, canvasCtx
 
 document.addEventListener("DOMContentLoaded", function() {
   // DOM ELEMENTS
@@ -31,8 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleTextBtn = document.getElementsByClassName('display-btn')
   // Audio 
   audioEl = document.querySelector('#audio')
+  // Canvas 
+  canvas = document.querySelector('canvas')
 
   // EVENT LISTENERS
+  window.onresize = onResize;
   toggleThemeBtn.onclick = toggleTheme
   modalContainer.onclick = closeModal
   closeBtn.onclick = closeModal
@@ -45,11 +50,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Audio Event Listeners
   audioEl.onended = function() {
     incrementPlaylistIndex() 
     audioSetup(playlistIndex)
   }
 })
+
+function onResize() {
+  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+  canvas.width = w;
+  canvas.height = h;
+
+  canvasCtx.fillStyle = '#000000';
+  canvasCtx.fillRect( 0, 0, w, h );
+}
 
 function toggleTheme() {
   const body = document.body
