@@ -28,6 +28,7 @@
       border: none;
       cursor: pointer;
       outline: none; }
+<<<<<<< HEAD
       @media (min-width: 960px) {
         .projects-section .project .title .display-btn {
           display: none; } }
@@ -35,6 +36,13 @@
         animation: rotateClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
       .projects-section .project .title .display-btn.unactive svg {
         animation: rotateCounterClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+=======
+      @media (min-width: 400px) {
+        .projects-section .project .title .display-btn img {
+          width: 20px; } }
+  .projects-section .project .text .description, .projects-section .project .text .stack {
+    font-weight: 300; }
+>>>>>>> master
   .projects-section .project .text .description {
     padding: 0 0 10px; }
     @media (min-width: 700px) {

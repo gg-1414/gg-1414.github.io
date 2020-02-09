@@ -66,6 +66,10 @@
     }
 
     .text {
+      .description, .stack {
+        font-weight: 300; 
+      }
+      
       .description {
         padding: 0 0 s(1.25);
 
