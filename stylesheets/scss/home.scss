@@ -1,27 +1,12 @@
 @import 'tools.scss';
-
-.light-theme {
-  .projects-section {
-    .project .stack {
-      border-top: 1px solid black;
-    }
-  }
-}
-
-.dark-theme {
-  .projects-section {
-    .project .stack {
-      border-top: 1px solid white;
-    }
-  }
-}
+@import 'colors.scss';
 
 .projects-section {
   .project {
-    margin-top: s(7);
+    margin-top: s(8);
 
     @include media(sm-min) {
-      margin-top: s(9);
+      margin-top: s(15);
     }
 
     &:first-child {
@@ -62,9 +47,19 @@
         cursor: pointer;
         outline: none;
 
-        img {
-          @include media(xs-min) {
-            width: s(2.5);
+        @include media(md-min) {
+          display: none;
+        }
+
+        &.active {
+          svg {
+            animation: rotateClockwise .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          }
+        }
+
+        &.unactive {
+          svg {
+            animation: rotateCounterClockwise .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
           }
         }
       }
@@ -100,6 +95,12 @@
     }
 
     .preview {
+      padding: s(2) 0; 
+
+      video, img {
+        box-shadow: -2px 4px 11px 0px #111;
+      }
+
       img {
         width: 100%; 
       }
@@ -137,7 +138,7 @@
       grid-template-areas: 
         "image content"
         "image links";
-      grid-gap: 0 s(4);
+      grid-gap: 0 s(6);
       
       .content {
         grid-area: content;

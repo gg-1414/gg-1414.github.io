@@ -61,5 +61,15 @@
   100% {
     opacity: 0;
     top: -20px; } }
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(180deg); } }
+@keyframes rotateCounterClockwise {
+  0% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0); } }
 
 /*# sourceMappingURL=keyframes.css.map */

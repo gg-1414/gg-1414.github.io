@@ -36,30 +36,6 @@ body {
 	line-height: 1;
   font-size: 1em;
 	overflow-x: hidden;
-
-	&.light-theme {
-		h2, h4, p, a {
-			color: black;
-		} 
-
-		background: white;
-	}
-
-	&.dark-theme {
-		h2, h4, p, a {
-			color: white; 
-		} 
-	
-		.black-btn {
-			border: 1px solid white;
-		}
-
-		.white-btn {
-			border: none;
-		}
-
-		background: black;
-	}
 }
 
 ol, ul {
@@ -94,6 +70,15 @@ video {
   width: 100%;
 }
 
+audio, button {
+	outline: none;
+}
+
+small {
+	font-size: s(1.75); 
+	letter-spacing: 1.5px;
+}
+
 h4 {
 	font-size: s(3); 
 	
@@ -112,7 +97,7 @@ p {
 	}
 
 	@include media(sm-min) {
-		font-size: s(2.5);
+		font-size: s(2.25);
 	}
 }
 
@@ -133,15 +118,4 @@ button > * {
 	text-align: center;
 	padding: s(.5) 0;
 	cursor: pointer; 
-
-	&.black-btn {
-		background: black;
-		color: white;
-	}
-
-	&.white-btn {
-		border: 1px solid black;
-		color: black;
-		background: white;
-	}
 }

@@ -61,6 +61,16 @@
   100% {
     opacity: 0;
     top: -20px; } }
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(180deg); } }
+@keyframes rotateCounterClockwise {
+  0% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0); } }
 html.modal-active, body.modal-active {
   overflow: hidden; }
 
@@ -78,7 +88,7 @@ html.modal-active, body.modal-active {
     text-align: center;
     vertical-align: middle; }
     #modal-container .modal-background .modal {
-      background: white;
+      background: #f2f3f4;
       padding: 48px 32px;
       display: inline-block;
       border-radius: 3px;
@@ -87,12 +97,12 @@ html.modal-active, body.modal-active {
       @media (min-width: 400px) {
         #modal-container .modal-background .modal {
           padding: 48px; } }
-      #modal-container .modal-background .modal h2, #modal-container .modal-background .modal p {
-        color: black; }
+      #modal-container .modal-background .modal small, #modal-container .modal-background .modal h2, #modal-container .modal-background .modal p {
+        color: #13131b; }
       #modal-container .modal-background .modal h2 {
         font-size: 24px;
         line-height: 24px;
-        margin-bottom: 16px; }
+        margin: 16px 0; }
       #modal-container .modal-background .modal p {
         font-size: 20px;
         line-height: 22px; }
@@ -107,9 +117,10 @@ html.modal-active, body.modal-active {
           letter-spacing: 2px;
           z-index: 5; }
         #modal-container .modal-background .modal .buttons .black-btn {
-          border: 1px solid black; }
+          border: 1px solid #13131b; }
         #modal-container .modal-background .modal .buttons .white-btn {
-          border: 1px solid black; }
+          border: 1px solid #13131b;
+          background: white; }
       #modal-container .modal-background .modal .modal-svg {
         position: absolute;
         top: 0;
@@ -131,7 +142,7 @@ html.modal-active, body.modal-active {
       #modal-container.sketch-in .modal-background .modal {
         background-color: transparent;
         animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-        #modal-container.sketch-in .modal-background .modal h2, #modal-container.sketch-in .modal-background .modal p, #modal-container.sketch-in .modal-background .modal button {
+        #modal-container.sketch-in .modal-background .modal small, #modal-container.sketch-in .modal-background .modal h2, #modal-container.sketch-in .modal-background .modal p, #modal-container.sketch-in .modal-background .modal button {
           opacity: 0;
           position: relative;
           animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }

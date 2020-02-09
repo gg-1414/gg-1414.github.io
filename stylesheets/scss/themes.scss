@@ -1,0 +1,113 @@
+@import 'colors.scss';
+
+.btn {
+  &.black-btn {
+    border: 1px solid $black;
+    background: $black;
+    color: $white;
+  }
+
+  &.white-btn {
+    border: 1px solid $black;
+    color: $black;
+    background: $white;
+  }
+}
+
+body {
+  &.light-theme {
+    background: $white;
+
+		h2, h4, p, a {
+			color: $black;
+		} 
+
+    header {
+      .title {
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+      }
+
+      #toggle-theme {
+        background: $white; 
+        &:after {
+          content: "🌚";
+        }
+      }
+  
+      .socials-list {
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    .projects-section {
+      .stack {
+        border-top: 1px solid $black;
+      }
+
+      .preview {
+        video, img {
+          box-shadow: -2px 4px 11px 0px #111;
+        }
+      }
+    }
+	}
+
+	&.dark-theme {
+    background: $black;
+
+		h2, h4, p, a {
+			color: $white; 
+		} 
+	
+		.black-btn, .white-btn {
+			border: 1px solid $white;
+    }
+    
+    audio {
+      filter: invert(1);
+    }
+    
+    header {
+      &, #toggle-theme { background: black; }
+      .name, .title, a { font-weight: 300; } 
+
+      .title {
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+      }
+
+      #toggle-theme {
+        &:after {
+          content: "🌞";
+        }
+      }
+  
+      .socials-list {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+      }
+    }
+
+    .projects-section {
+      .display-btn {
+        svg path { fill: $white; }
+      }
+
+      p {
+        font-weight: 200;
+      }
+
+      .stack {
+        border-top: 1px solid white;
+      }
+
+      .preview {
+        video, img {
+          box-shadow: -2px 4px 11px 0px black;
+        }
+      }
+    }
+	}
+}

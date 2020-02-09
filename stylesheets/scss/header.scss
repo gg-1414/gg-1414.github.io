@@ -1,33 +1,5 @@
 @import 'tools.scss';
 
-.light-theme {
-  header {
-    .title {
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-    }
-
-    .socials-list {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-    }
-  }
-}
-
-.dark-theme {
-  header {
-    .title {
-      border-left: 1px solid white;
-      border-right: 1px solid white;
-    }
-
-    .socials-list {
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-    }
-  }
-}
-
 header {
   display: grid; 
   grid-template-rows: auto auto;
@@ -58,7 +30,7 @@ header {
     }
   }
 
-  .title, .socials-list {
+  .socials-list {
     font-size: s(1.5);
     display: flex; 
 
@@ -69,26 +41,37 @@ header {
 
   .title {
     grid-area: title;
+    display: flex; 
     flex-wrap: wrap;
     flex-direction: row; 
     align-items: center;
     height: 100%;
     font-weight: normal;
+    font-size: s(2); 
+
+    @include media(xs-max) {
+      font-size: s(1.75);
+    }
 
     span:first-child {
       margin-right: s(1);
     }
   }
 
-  #music-modal-btn {
-    background: transparent; 
-    outline: none;
+  #toggle-theme {
     border: none;
     cursor: pointer;
+    grid-area: icon; 
+    width: s(7.75);
+    height: s(7.75);
+    display: flex; 
+    padding: 0;
+    justify-content: center;
 
-    img {
-      grid-area: icon; 
-      border-radius: 50%;
+    &:after {
+      content: "🌞"; 
+      font-size: s(4);
+      height: s(4.25);
     }
   }
 

@@ -1,17 +1,4 @@
-.light-theme header .title {
-  border-left: 1px solid black;
-  border-right: 1px solid black; }
-.light-theme header .socials-list {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black; }
-
-.dark-theme header .title {
-  border-left: 1px solid white;
-  border-right: 1px solid white; }
-.dark-theme header .socials-list {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white; }
-
+@charset "UTF-8";
 header {
   display: grid;
   grid-template-rows: auto auto;
@@ -31,29 +18,39 @@ header {
     @media (max-width: 399px) {
       header .name {
         font-size: 14px; } }
-  header .title, header .socials-list {
+  header .socials-list {
     font-size: 12px;
     display: flex; }
     @media (min-width: 400px) {
-      header .title, header .socials-list {
+      header .socials-list {
         font-size: 16px; } }
   header .title {
     grid-area: title;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     height: 100%;
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 16px; }
+    @media (max-width: 399px) {
+      header .title {
+        font-size: 14px; } }
     header .title span:first-child {
       margin-right: 8px; }
-  header #music-modal-btn {
-    background: transparent;
-    outline: none;
+  header #toggle-theme {
     border: none;
-    cursor: pointer; }
-    header #music-modal-btn img {
-      grid-area: icon;
-      border-radius: 50%; }
+    cursor: pointer;
+    grid-area: icon;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    padding: 0;
+    justify-content: center; }
+    header #toggle-theme:after {
+      content: "🌞";
+      font-size: 32px;
+      height: 34px; }
   header .socials-list {
     grid-area: socials;
     justify-content: space-between; }
