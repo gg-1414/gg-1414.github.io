@@ -8,6 +8,7 @@
   height: s(7);
   border-top: 1px solid black;
   background: #f2f3f4;
+  z-index: 10;
   transform: scale(0);
 
   &.active {
