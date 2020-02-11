@@ -1,0 +1,12 @@
+@import 'keyframes.scss';
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  transform: scale(0);
+
+  &.scale-up {
+    transform: scale(1);
+  }
+}

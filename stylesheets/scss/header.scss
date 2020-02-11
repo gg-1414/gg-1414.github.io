@@ -8,6 +8,7 @@ header {
     "name title icon"
     "socials socials socials";
   align-items: center;
+  z-index: 10;
 
   > * {
     padding: s(1) s(2);

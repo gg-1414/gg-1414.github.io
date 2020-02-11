@@ -1,31 +1,32 @@
-function audioSetup(index) {
-  console.log('audioEl?', audioEl)
-  audioEl.src = audioFiles[index] 
-  console.log(index,audioFiles[index])
+function audioSetup() {
+  audioEl.classList += 'active'
 
-  audioSrcNode = audioCtx.createMediaElementSource(audioEl)
-  analyser = audioCtx.createAnalyser() 
-  analyser.fftSize = 16384; 
-  audioSrcNode.connect(analyser)
-  analyser.connect(audioCtx.destination)
-  bufferLength = analyser.frequencyBinCount
-  dataArray = new Uint8Array(bufferLength)
+  if (window.innerWidth >= 960) {
+    audioCtx = new AudioContext()
+    audioSrcNode = audioCtx.createMediaElementSource(audioEl)
+    analyser = audioCtx.createAnalyser() 
+    analyser.fftSize = 16384; 
+    audioSrcNode.connect(analyser)
+    analyser.connect(audioCtx.destination)
+    bufferLength = analyser.frequencyBinCount
+    dataArray = new Uint8Array(bufferLength)
+  
+    canvasInit() 
+    drawVisualization()
+  }
 
-  canvasInit() 
-  audioEl.play()
-  drawVisualization()
+  document.body.classList += ' audio-visual-on'
+  playAudio(playlistIndex) 
 }
 
-function canvasInit() {
-  canvas.width = window.innerWidth 
-  canvas.height = window.innerHeight;
+
+function playAudio(index) {
+  audioEl.src = audioFiles[index] 
+  audioEl.play()
 }
 
 function drawVisualization() {
-  const width = canvas.width,
-        height = canvas.height 
-
-  const barWidth = (width / bufferLength) * 13 
+  const barWidth = (canvas.width / bufferLength) * 13 
   let barHeight, x = 0
 
   function renderFrame() {
@@ -33,14 +34,23 @@ function drawVisualization() {
     x = 0 
 
     analyser.getByteFrequencyData(dataArray)
-    canvasCtx.fillStyle = 'rgba(0,0,0,0.2)'
-    canvasCtx.fillRect(0, 0, width, height)
+
+    let bgColor 
+
+    if (document.body.classList.contains('light-theme')) {
+      bgColor = 'rgba(255,255,255,0.2)'
+    } else {
+      bgColor = 'rgba(0,0,0,0.2)'
+    }
+
+    canvasCtx.fillStyle = bgColor
+    canvasCtx.fillRect(0, 0, canvas.width, canvas.height)
 
     let r, g, b
-    const totalBars = 118 
+    const totalBars = canvas.width * .14 
     
     for (let i = 0; i < totalBars; i++) {
-      barHeight = dataArray[i] * 2.5
+      barHeight = dataArray[i] * 2
 
       if (dataArray[i] > 210){ // pink
         r = 250
@@ -65,7 +75,7 @@ function drawVisualization() {
       }
 
       canvasCtx.fillStyle = `rgb(${r},${g},${b})`;
-      canvasCtx.fillRect(x, (height - barHeight), barWidth, barHeight)
+      canvasCtx.fillRect(x, (canvas.height - barHeight), barWidth, barHeight)
 
       x += barWidth + 10 
     }

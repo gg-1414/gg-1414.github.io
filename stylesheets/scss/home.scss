@@ -2,6 +2,8 @@
 @import 'colors.scss';
 
 .projects-section {
+  z-index: 5; 
+
   .project {
     margin-top: s(8);
 
@@ -142,7 +144,7 @@
       grid-template-areas: 
         "image content"
         "image links";
-      grid-gap: 0 s(6);
+      grid-gap: 0 s(8);
       
       .content {
         grid-area: content;

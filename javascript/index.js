@@ -9,9 +9,7 @@ const audioFiles = [
   'https://audio-dls.s3.us-east-2.amazonaws.com/CharlestheFirst/Kirra.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Burial/Archangel.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Flume/Ezra.mp3',
-  'https://audio-dls.s3.us-east-2.amazonaws.com/Flume/Hyperreal.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Bonobo/Kerala.mp3',
-  'https://audio-dls.s3.us-east-2.amazonaws.com/Phantogram/Dont_Move.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Evil+Needle/Sunday_Morning.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Mac+Miller/I_Can_See.mp3',
   'https://audio-dls.s3.us-east-2.amazonaws.com/Ekali/Unfaith.mp3',
@@ -33,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleTextBtn = document.getElementsByClassName('display-btn')
   // Audio 
   audioEl = document.querySelector('#audio')
-  audioCtx = new AudioContext()
+ 
   // Canvas 
   canvas = document.querySelector('canvas')
   canvasCtx = canvas.getContext('2d')
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleThemeBtn.onclick = toggleTheme
   modalContainer.onclick = closeModal
   closeBtn.onclick = closeModal
-  playAudioBtn.onclick = playAudio
+  playAudioBtn.onclick = audioSetup
 
   // Home Page Event Listeners 
   if (toggleTextBtn.length > 0) {
@@ -55,20 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
   // Audio Event Listeners
   audioEl.onended = function() {
     incrementPlaylistIndex() 
-    audioSetup(playlistIndex)
+    playAudio(playlistIndex)
   }
 })
 
 function onResize() {
-  console.log('on resize! ')
-  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  const w = window.innerWidth || document.body.clientWidth
+  const h = window.innerHeight || document.body.clientHeight
 
   canvas.width = w;
   canvas.height = h;
-
-  canvasCtx.fillStyle = '#000000';
-  canvasCtx.fillRect( 0, 0, w, h );
 }
 
 function toggleTheme() {
@@ -87,4 +81,10 @@ function incrementPlaylistIndex() {
     ++playlistIndex
   }
   return playlistIndex
+}
+
+function canvasInit() {
+  canvas.classList += 'scale-up'
+  canvas.width = window.innerWidth || document.body.clientWidth
+  canvas.height = window.innerHeight || document.body.clientHeight
 }

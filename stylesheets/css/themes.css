@@ -12,13 +12,13 @@ body.light-theme {
   background: #f2f3f4; }
   body.light-theme h2, body.light-theme h4, body.light-theme p, body.light-theme a {
     color: #13131b; }
+  body.light-theme header, body.light-theme header #toggle-theme {
+    background: #f2f3f4; }
   body.light-theme header .title {
     border-left: 1px solid #13131b;
     border-right: 1px solid #13131b; }
-  body.light-theme header #toggle-theme {
-    background: #f2f3f4; }
-    body.light-theme header #toggle-theme:after {
-      content: "🌚"; }
+  body.light-theme header #toggle-theme:after {
+    content: "🌚"; }
   body.light-theme header .socials-list {
     border-top: 1px solid #13131b;
     border-bottom: 1px solid #13131b; }
