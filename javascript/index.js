@@ -88,3 +88,11 @@ function canvasInit() {
   canvas.width = window.innerWidth || document.body.clientWidth
   canvas.height = window.innerHeight || document.body.clientHeight
 }
+
+function checkBrowser(type) {
+  if (navigator.userAgent.indexOf(type) != -1) {
+    return true
+  } else {
+    return false
+  }
+}

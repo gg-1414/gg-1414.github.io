@@ -1,8 +1,17 @@
 function audioSetup() {
   audioEl.classList += 'active'
 
-  if (window.innerWidth >= 960) {
+  if (checkBrowser('Safari')) {
+    if (checkBrowser('Chrome')) {
+      audioCtx = new AudioContext()
+    } else {
+      audioCtx = new webkitAudioContext()
+    }
+  } else {
     audioCtx = new AudioContext()
+  }
+
+  if (audioCtx && window.innerWidth >= 960) {
     audioSrcNode = audioCtx.createMediaElementSource(audioEl)
     analyser = audioCtx.createAnalyser() 
     analyser.fftSize = 16384; 
@@ -13,9 +22,11 @@ function audioSetup() {
   
     canvasInit() 
     drawVisualization()
+  } else {
+      // Web Audio API is not supported
+      alert("Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox.")
   }
 
-  document.body.classList += ' audio-visual-on'
   playAudio(playlistIndex) 
 }
 

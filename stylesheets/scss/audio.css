@@ -64,7 +64,7 @@
     transform: rotate(180deg); }
   100% {
     transform: rotate(0); } }
-audio {
+#audio {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -72,9 +72,12 @@ audio {
   border-top: 1px solid black;
   background: #f2f3f4;
   z-index: 10;
-  transform: scale(0); }
-  audio.active {
+  transform: scale(0);
+  background: red; }
+  #audio.active {
     transform: scale(1);
     animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+  #audio::-webkit-media-controls-panel {
+    background: red; }
 
 /*# sourceMappingURL=audio.css.map */

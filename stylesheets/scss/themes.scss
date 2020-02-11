@@ -25,6 +25,7 @@ body {
     @supports (-moz-appearance:none) {
       audio {
         filter: invert(1);
+        border-top: 1px solid white;
       }
     }
  
@@ -78,7 +79,8 @@ body {
 
     @supports (-moz-appearance:none) {
       audio {
-        filter: invert(0);
+        filter: invert(0) hue-rotate(90deg);
+        border-top: 1px solid white;
       }
     }
     

@@ -14,8 +14,7 @@ body.light-theme {
     color: #13131b; }
   @supports (-moz-appearance: none) {
     body.light-theme audio {
-      filter: invert(1);
-      border-top: 1px solid white; } }
+      filter: invert(1); } }
   body.light-theme header, body.light-theme header #toggle-theme {
     background: #f2f3f4; }
   body.light-theme header .title {
@@ -40,8 +39,7 @@ body.dark-theme {
     filter: invert(1); }
   @supports (-moz-appearance: none) {
     body.dark-theme audio {
-      filter: invert(0) hue-rotate(90deg);
-      border-top: 1px solid white; } }
+      filter: invert(0); } }
   body.dark-theme header, body.dark-theme header #toggle-theme {
     background: #0d0c0b; }
   body.dark-theme header .name, body.dark-theme header .title, body.dark-theme header a {
