@@ -106,8 +106,14 @@ html.modal-active, body.modal-active {
         #modal-container .modal-background .modal small:first-child {
           border-bottom: 1px solid #13131b;
           padding-bottom: 12px; }
+        #modal-container .modal-background .modal small:last-of-type {
+          display: block;
+          margin: 28px 0 0 0; }
+          @media (min-width: 960px) {
+            #modal-container .modal-background .modal small:last-of-type {
+              display: none; } }
       #modal-container .modal-background .modal .buttons {
-        margin: 28px 0;
+        margin: 28px 0 0;
         display: flex;
         justify-content: space-between; }
         #modal-container .modal-background .modal .buttons .btn {

@@ -57,10 +57,19 @@ html, body {
           border-bottom: 1px solid $black;
           padding-bottom: s(1.5);
         }
+
+        &:last-of-type {
+          display: block;
+          margin: s(3.5) 0 0 0; 
+
+          @include media(md-min) {
+            display: none;
+          }
+        }
       }
 
       .buttons {
-        margin: s(3.5) 0;
+        margin: s(3.5) 0 0;
         display: flex; 
         justify-content: space-between;
       
