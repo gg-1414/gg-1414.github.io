@@ -22,6 +22,12 @@ body {
 			color: $black;
     } 
 
+    @supports (-moz-appearance:none) {
+      audio {
+        filter: invert(1);
+      }
+    }
+ 
     header {
       &, #toggle-theme { background: $white; }
 
@@ -68,6 +74,12 @@ body {
     
     audio {
       filter: invert(1);
+    }
+
+    @supports (-moz-appearance:none) {
+      audio {
+        filter: invert(0);
+      }
     }
     
     header {
