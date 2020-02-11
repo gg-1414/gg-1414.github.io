@@ -91,6 +91,9 @@ html.modal-active, body.modal-active {
       @media (min-width: 400px) {
         #modal-container .modal-background .modal {
           padding: 48px; } }
+      @media (min-width: 960px) {
+        #modal-container .modal-background .modal {
+          padding: 64px; } }
       #modal-container .modal-background .modal small, #modal-container .modal-background .modal h2, #modal-container .modal-background .modal p {
         color: #13131b; }
       #modal-container .modal-background .modal h2 {

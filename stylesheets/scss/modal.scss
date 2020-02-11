@@ -36,6 +36,10 @@ html, body {
         padding: s(6);
       }
 
+      @include media(md-min) {
+        padding: s(8);
+      }
+
       small, h2, p { color: $black; }
 
       h2 {
@@ -67,7 +71,7 @@ html, body {
           }
         }
       }
-      
+
       .buttons {
         margin: s(3.5) 0 0;
         display: flex; 
