@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'tools.scss';
 
 .btn {
   &.black-btn {
@@ -121,7 +122,9 @@ body {
 
       .preview {
         video, img {
-          box-shadow: -2px 4px 11px 0px black;
+          @include media(md-min) {
+            box-shadow: 0px 0px 0px 3px white;
+          }
         }
       }
     }
