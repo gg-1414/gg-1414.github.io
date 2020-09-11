@@ -49,9 +49,10 @@ function drawVisualization() {
     let bgColor 
 
     if (document.body.classList.contains('light-theme')) {
-      bgColor = 'rgba(255,255,255,0.2)'
+      bgColor = 'rgba(255,255,255,0.1)'
     } else {
-      bgColor = 'rgba(0,0,0,0.2)'
+      bgColor = 'rgba(0,0,0,0.1)'
+
     }
 
     canvasCtx.fillStyle = bgColor
@@ -61,7 +62,9 @@ function drawVisualization() {
     const totalBars = canvas.width * .14 
     
     for (let i = 0; i < totalBars; i++) {
-      barHeight = dataArray[i] * 2
+      const max = 3
+      const min = 1
+      barHeight = dataArray[i] * Math.random() * (max - min) + min
 
       if (dataArray[i] > 210){ // pink
         r = 250
@@ -85,8 +88,10 @@ function drawVisualization() {
         b = 255
       }
 
-      canvasCtx.fillStyle = `rgb(${r},${g},${b})`;
+      const alpha = Math.random()
+      canvasCtx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
       canvasCtx.fillRect(x, (canvas.height - barHeight), barWidth, barHeight)
+      // canvasCtx.fillRect(x, (canvas.height - barHeight) * .95, 2, 2)
 
       x += barWidth + 10 
     }

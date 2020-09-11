@@ -17,7 +17,7 @@
 
 body {
   &.light-theme {
-    background: $white;
+    // background: $white;
 
 		h2, h4, p, a {
 			color: $black;
@@ -31,7 +31,7 @@ body {
     }
  
     header {
-      &, #toggle-theme { background: $white; }
+      // &, #toggle-theme { background: $white; }
 
       .title {
         border-left: 1px solid $black;

@@ -55,12 +55,10 @@
         display: none; } }
     .projects-section .project .collapsible-content.active {
       display: block; }
-    .projects-section .project .preview {
-      padding: 16px 0; }
-      .projects-section .project .preview video, .projects-section .project .preview img {
-        box-shadow: -2px 4px 11px 0px #111; }
-      .projects-section .project .preview img {
-        width: 100%; }
+    .projects-section .project .preview video, .projects-section .project .preview img {
+      box-shadow: -2px 4px 11px 0px #111; }
+    .projects-section .project .preview img {
+      width: 100%; }
     .projects-section .project .links {
       padding-top: 16px;
       display: flex; }
