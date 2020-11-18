@@ -5,22 +5,25 @@
   z-index: 5; 
 
   .project {
-    margin-top: s(8);
+    margin-top: 64px;
 
     @include media(sm-min) {
-      margin-top: s(15);
+      margin-top: 144px;
     }
 
     &:first-child {
-      margin-top: s(5);
+      margin-top: 40px;
 
       @include media(sm-min) {
-        margin-top: s(6); 
+        margin-top: 80px; 
       }
     }
 
     &:last-child {
-      margin-bottom: s(10);
+      margin-bottom: 80px;
+      @include media(sm-min) {
+        margin-top: 120px; 
+      }
     }
 
     .content, .links {
@@ -41,6 +44,7 @@
   
       h4 {
         flex: 1;
+        background: #bfe7f75e;
       }
 
       .display-btn {
@@ -70,14 +74,15 @@
     .text {
       p {
         font-weight: 300; 
+        background: #bfe7f75e;
       }
       
       .description {
-        padding: 0 0 s(1.25);
+        margin: 0 0 s(1.25);
+        padding: 0; 
 
         @include media(sm-min) {
-          max-width: 95%;
-          padding: 0 0 s(2);
+          margin: 0 0 s(2);
         }
       }
 
@@ -101,7 +106,7 @@
     }
 
     .preview {
-      padding: s(2) 0; 
+      padding: 0; 
 
       video, img {
         box-shadow: -2px 4px 11px 0px #111;
@@ -172,6 +177,13 @@
       .down-arrow-icon {
         display: none;
       }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
     }
   }
 }
