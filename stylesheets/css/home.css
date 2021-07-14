@@ -85,7 +85,7 @@
       grid-template-rows: auto auto;
       grid-template-columns: 1fr 1.5fr;
       grid-template-areas: "image content" "image links";
-      grid-gap: 0 64px; }
+      grid-gap: 0 80px; }
       .projects-section .project .content {
         grid-area: content; }
       .projects-section .project .preview {
