@@ -18,6 +18,10 @@ body.light-theme {
       border-top: 1px solid white; } }
   body.light-theme header, body.light-theme header #toggle-theme {
     background: #f2f3f4; }
+  body.light-theme header .name:before,
+  body.light-theme header .title:before,
+  body.light-theme header #toggle-theme:before {
+    filter: invert(1); }
   body.light-theme header .title {
     border-left: 1px solid #13131b;
     border-right: 1px solid #13131b; }
@@ -44,8 +48,10 @@ body.dark-theme {
       border-top: 1px solid white; } }
   body.dark-theme header, body.dark-theme header #toggle-theme {
     background: #0d0c0b; }
-  body.dark-theme header .name, body.dark-theme header .title, body.dark-theme header a {
-    font-weight: 300; }
+  body.dark-theme header .name:before,
+  body.dark-theme header .title:before,
+  body.dark-theme header #toggle-theme:before {
+    filter: invert(0); }
   body.dark-theme header .title {
     border-left: 1px solid #f2f3f4;
     border-right: 1px solid #f2f3f4; }

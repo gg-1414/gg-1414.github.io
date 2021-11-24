@@ -1,110 +1,108 @@
-.projects-section {
-  z-index: 5; }
-  .projects-section .project {
-    margin-top: 64px; }
-    @media (min-width: 700px) {
-      .projects-section .project {
-        margin-top: 144px; } }
-    .projects-section .project:first-child {
-      margin-top: 40px; }
-      @media (min-width: 700px) {
-        .projects-section .project:first-child {
-          margin-top: 80px; } }
-    .projects-section .project:last-child {
-      margin-bottom: 80px; }
-      @media (min-width: 700px) {
-        .projects-section .project:last-child {
-          margin-top: 120px; } }
-    .projects-section .project .content, .projects-section .project .links {
-      padding: 0 16px; }
-      @media (min-width: 700px) {
-        .projects-section .project .content, .projects-section .project .links {
-          padding: 0 24px; } }
-    .projects-section .project .title {
-      display: flex;
-      margin-bottom: 16px; }
-      @media (min-width: 700px) {
-        .projects-section .project .title {
-          margin-bottom: 24px; } }
-      .projects-section .project .title h4 {
-        flex: 1;
-        background: #bfe7f75e; }
-      .projects-section .project .title .display-btn {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        outline: none; }
-        @media (min-width: 960px) {
-          .projects-section .project .title .display-btn {
-            display: none; } }
-        .projects-section .project .title .display-btn.active svg {
-          animation: rotateClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-        .projects-section .project .title .display-btn.unactive svg {
-          animation: rotateCounterClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-    .projects-section .project .text p {
-      font-weight: 300;
-      background: #bfe7f75e; }
-    .projects-section .project .text .description {
-      margin: 0 0 10px;
-      padding: 0; }
-      @media (min-width: 700px) {
-        .projects-section .project .text .description {
-          margin: 0 0 16px; } }
-    .projects-section .project .text .stack {
-      padding: 12px 0; }
-      @media (min-width: 700px) {
-        .projects-section .project .text .stack {
-          padding: 16px 0; } }
-    @media (max-width: 959px) {
-      .projects-section .project .collapsible-content {
-        display: none; } }
-    .projects-section .project .collapsible-content.active {
-      display: block; }
-    .projects-section .project .preview {
-      padding: 0; }
-      .projects-section .project .preview video, .projects-section .project .preview img {
-        box-shadow: -2px 4px 11px 0px #111; }
-      .projects-section .project .preview img {
-        width: 100%; }
-    .projects-section .project .links {
-      padding-top: 16px;
-      display: flex; }
-      .projects-section .project .links .btn {
-        flex: 1; }
-        .projects-section .project .links .btn:first-child {
-          margin-right: 12px; }
-        @media (min-width: 700px) {
-          .projects-section .project .links .btn {
-            font-size: 20px;
-            line-height: 2; } }
-  @media (min-width: 960px) {
-    .projects-section .container {
-      padding: 32px 64px; }
+.projects-section .project {
+  margin-top: 64px; }
+  @media (min-width: 700px) {
     .projects-section .project {
-      display: grid;
-      grid-template-rows: auto auto;
-      grid-template-columns: 1fr 1.5fr;
-      grid-template-areas: "image content" "image links";
-      grid-gap: 0 80px; }
-      .projects-section .project .content {
-        grid-area: content; }
-      .projects-section .project .preview {
-        grid-area: image;
-        align-self: center; }
-      .projects-section .project .links {
-        grid-area: links;
-        align-self: self-end; }
+      margin-top: 144px; } }
+  .projects-section .project:first-child {
+    margin-top: 40px; }
+    @media (min-width: 700px) {
+      .projects-section .project:first-child {
+        margin-top: 80px; } }
+  .projects-section .project:last-child {
+    margin-bottom: 80px; }
+    @media (min-width: 700px) {
+      .projects-section .project:last-child {
+        margin-top: 120px; } }
+  .projects-section .project .content, .projects-section .project .links {
+    padding: 0 16px; }
+    @media (min-width: 700px) {
+      .projects-section .project .content, .projects-section .project .links {
+        padding: 0 24px; } }
+  .projects-section .project .title {
+    display: flex;
+    margin-bottom: 16px; }
+    @media (min-width: 700px) {
+      .projects-section .project .title {
+        margin-bottom: 24px; } }
+    .projects-section .project .title h4 {
+      flex: 1;
+      background: #bfe7f75e; }
+    .projects-section .project .title .display-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none; }
+      @media (min-width: 960px) {
+        .projects-section .project .title .display-btn {
+          display: none; } }
+      .projects-section .project .title .display-btn.active svg {
+        animation: rotateClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+      .projects-section .project .title .display-btn.unactive svg {
+        animation: rotateCounterClockwise 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+  .projects-section .project .text p {
+    font-weight: 300;
+    background: #bfe7f75e; }
+  .projects-section .project .text .description {
+    margin: 0 0 10px;
+    padding: 0; }
+    @media (min-width: 700px) {
+      .projects-section .project .text .description {
+        margin: 0 0 16px; } }
+  .projects-section .project .text .stack {
+    padding: 12px 0; }
+    @media (min-width: 700px) {
+      .projects-section .project .text .stack {
+        padding: 16px 0; } }
+  @media (max-width: 959px) {
+    .projects-section .project .collapsible-content {
+      display: none; } }
+  .projects-section .project .collapsible-content.active {
+    display: block; }
+  .projects-section .project .preview {
+    padding: 0; }
+    .projects-section .project .preview video, .projects-section .project .preview img {
+      box-shadow: -2px 4px 11px 0px #111; }
+    .projects-section .project .preview img {
+      width: 100%; }
+  .projects-section .project .links {
+    padding-top: 16px;
+    display: flex; }
+    .projects-section .project .links .btn {
+      flex: 1; }
+      .projects-section .project .links .btn:first-child {
+        margin-right: 12px; }
+      @media (min-width: 700px) {
         .projects-section .project .links .btn {
-          max-height: 48px;
-          max-width: 232px; }
-          .projects-section .project .links .btn:first-child {
-            margin-right: 32px; }
-      .projects-section .project .down-arrow-icon {
-        display: none; } }
-  @media (min-width: 1280px) {
-    .projects-section .container {
-      max-width: 90%;
-      margin: 0 auto; } }
+          font-size: 20px;
+          line-height: 2; } }
+@media (min-width: 960px) {
+  .projects-section .container {
+    padding: 32px 64px; }
+  .projects-section .project {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "image content" "image links";
+    grid-gap: 0 80px; }
+    .projects-section .project .content {
+      grid-area: content; }
+    .projects-section .project .preview {
+      grid-area: image;
+      align-self: center; }
+    .projects-section .project .links {
+      grid-area: links;
+      align-self: self-end; }
+      .projects-section .project .links .btn {
+        max-height: 48px;
+        max-width: 232px; }
+        .projects-section .project .links .btn:first-child {
+          margin-right: 32px; }
+    .projects-section .project .down-arrow-icon {
+      display: none; } }
+@media (min-width: 1280px) {
+  .projects-section .container {
+    max-width: 90%;
+    margin: 0 auto; } }
 
 @keyframes conditionalOpen {
   from {

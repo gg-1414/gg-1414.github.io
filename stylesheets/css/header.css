@@ -13,6 +13,28 @@ header {
         padding: 16px; } }
   header .name, header .socials-list li {
     display: inline-block; }
+  header .name,
+  header .title,
+  header #toggle-theme {
+    position: relative;
+    overflow: hidden;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    font-weight: bold; }
+    header .name:before,
+    header .title:before,
+    header #toggle-theme:before {
+      content: "";
+      height: 100%;
+      background-image: url("../../assets/media/perspective.jpg");
+      background-size: contain;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .25;
+      filter: invert(1); }
   header .name {
     grid-area: name;
     white-space: nowrap; }
@@ -32,7 +54,6 @@ header {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    font-weight: normal;
     font-size: 16px; }
     @media (max-width: 399px) {
       header .title {
@@ -52,7 +73,8 @@ header {
     header #toggle-theme:after {
       content: "🌞";
       font-size: 32px;
-      height: 34px; }
+      height: 34px;
+      z-index: 0; }
   header .socials-list {
     grid-area: socials;
     justify-content: space-between; }

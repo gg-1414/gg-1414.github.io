@@ -3,6 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/index.css">
   <script src="./javascript/collapsible_content.js"></script>
   <script src="./javascript/audio.js"></script>
@@ -20,6 +23,7 @@
   </script>
 </head>
 <body class="light-theme modal-active">
+  <div class="background_image"></div>
   <div id="modal-container" class="sketch-in">
     <div class="modal-background">
       <div class="modal">
@@ -46,6 +50,7 @@
     <button id="toggle-theme" title="Toggle theme" alt="Toggle theme">
     </button>
     <ul class="socials-list">
+      <li><a href="./about.html">about me!</a></li>
       <li><a href="mailto:ginalee1114@gmail.com" target="_blank">email</a></li>
       <li><a href="https://github.com/gg-1414" target="_blank">github</a></li>
       <li><a href="https://www.linkedin.com/in/gina-lee-00b940172/" target="_blank">linkedin</a></li>
@@ -54,268 +59,271 @@
     </ul>
   </header>
 
-  <section class="projects-section">
-    <div class="container">
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Sky Parlor</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
+  <main>
+    <section class="projects-section">
+      <div class="container">
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Sky Parlor</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Online store for LA-based clothing brand Sky Parlor. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">React, SCSS, Firebase, Firestore, Netlify, Shopify SDK</p>
+            </div>
           </div>
-          <div class="text collapsible-content">
-            <p class="description">Online store for LA-based clothing brand Sky Parlor. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">React, SCSS, Firebase, Firestore, Netlify, Shopify SDK</p>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/skyparlor.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/skyparlor.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://skyparlor.online/" class="btn white-btn" target="_blank">Live Site</a>
           </div>
         </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/skyparlor.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/skyparlor.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://skyparlor.online/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Ethel's Club</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">An immersive wellness platform centering people of color. Read/save blogs, view 24/7 video, purchase guides. Design by <a href="https://www.ethelsclub.com/">Ethel's Club</a>.</p>
+              <p class="stack">NextJS, Mailchimp, SCSS, Firebase, Firestore, Netlify CMS, Shopify SDK</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/ethelsclub.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/ethelsclub.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://www.ethelsclub.com/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Puppy Coin</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Meme Coin landing page. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">VueJS</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/puppy-coin.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/puppy-coin.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://deploy-preview-3--inspiring-tereshkova-0ef206.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Straws Int</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Clothing brand based in NYC. Shopify theme & custom code added for photo gallery layout. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">Shopify</p>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/strawsint.png" />
+          </div>
+          <div class="links">
+            <a href="https://strawsint.com/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Best Case Scenario NYC</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Online store for a NYC-based clothing brand. Design by <a target="_blank" href="https://brianagude.com/">brianagude.com</a>.</p>
+              <p class="stack">React, SCSS, Shopify Buy SDK</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/bcs.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/bcs.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://bestcasescenario.nyc/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>American Holocaust (Prospective Film)</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Short film website to view trailer, read about the film, and buy merchandise. Design by <a target="_blank" href="https://www.kdela.design/">kdela.design</a> & <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">VueJS, SCSS</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/american-holocaust.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/american-holocaust-poster.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://ecstatic-bartik-0e04f3.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Crypto Market Rates</h4>
+              <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">A real time auto-updating table that lists crypto currency exchange rates based on a configurable refresh interval. Pulls data from a <a href="https://liquality.io/">Liquality</a> API. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">VueJS, SCSS</p>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/liquality.png" />
+          </div>
+          <div class="links">
+            <a href="https://github.com/gg-1414/crypto-market-rates" class="btn black-btn" target="_blank">Github</a>
+            <a href="https://epic-lichterman-11a5f8.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Key-Moji</h4>
+               <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Interactive keyboard for faster typing of&nbsp;emojis. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">Ruby on Rails, React, SCSS</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/keymoji.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/key-moji.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://github.com/gg-1414/key-moji-fe" class="btn black-btn" target="_blank">Github</a>
+            <a href="http://key-moji.herokuapp.com/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Recognizer</h4>
+               <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Face recognition to detect user’s emotion and plays a song based on that&nbsp;emotion. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">Ruby on Rails, HTML, CSS, JavaScript, Python (server)</p>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/recognizer.gif" />
+          </div>
+          <div class="links">
+            <a href="https://github.com/gg-1414/recognizer-fe" class="btn black-btn" target="_blank">Github FE</a>
+            <a href="https://github.com/gg-1414/recognizer-backend" class="btn white-btn" target="_blank">Github BE</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Hackathon</h4>
+               <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Brooklyn Tech Week Urban Blockchain Hackathon Winner&nbsp;(2018). Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">Solidity, React, CSS</p>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/hackathon.gif"/>
+          </div>
+          <div class="links">
+            <a href="https://github.com/fodisi/dao-hackathon" class="btn black-btn" target="_blank">Github</a>
+            <a href="https://medium.com/@gg_gina/my-first-hackathon-experience-3df0c501f58c" class="btn white-btn" target="_blank">Blog</a>
+          </div>
+        </div>  
+  
+        <div class="project">
+          <div class="content"> 
+            <div class="title">
+              <h4>Restaurant Site</h4>
+               <button class="display-btn">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="text collapsible-content">
+              <p class="description">Website redesign of the restaurant I used to work at. (Also the very first website I ever&nbsp;created). Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
+              <p class="stack">HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="preview">
+            <video src="./assets/media/modoo-preview.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/modoo.png" muted autoplay loop>
+          </div>
+          <div class="links">
+            <a href="https://github.com/gg-1414/Modoo-website" class="btn black-btn" target="_blank">Github</a>
+            <a href="https://gg-1414.github.io/Modoo-website/" class="btn white-btn" target="_blank">Live Site</a>
+          </div>
+        </div>  
       </div>
+    </section>
 
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Ethel's Club</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">An immersive wellness platform centering people of color. Read/save blogs, view 24/7 video, purchase guides. Design by <a href="https://www.ethelsclub.com/">Ethel's Club</a>.</p>
-            <p class="stack">NextJS, Mailchimp, SCSS, Firebase, Firestore, Netlify CMS, Shopify SDK</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/ethelsclub.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/ethelsclub.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://www.ethelsclub.com/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
+  </main>
 
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Puppy Coin</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Meme Coin landing page. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">VueJS</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/puppy-coin.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/puppy-coin.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://deploy-preview-3--inspiring-tereshkova-0ef206.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Straws Int</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Clothing brand based in NYC. Shopify theme & custom code added for photo gallery layout. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">Shopify</p>
-          </div>
-        </div>
-        <div class="preview">
-          <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/strawsint.png" />
-        </div>
-        <div class="links">
-          <a href="https://strawsint.com/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Best Case Scenario NYC</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Online store for a NYC-based clothing brand. Design by <a target="_blank" href="https://brianagude.com/">brianagude.com</a>.</p>
-            <p class="stack">React, SCSS, Shopify Buy SDK</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/bcs.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/bcs.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://bestcasescenario.nyc/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>American Holocaust (Prospective Film)</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Short film website to view trailer, read about the film, and buy merchandise. Design by <a target="_blank" href="https://www.kdela.design/">kdela.design</a> & <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">VueJS, SCSS</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/american-holocaust.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/american-holocaust-poster.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://ecstatic-bartik-0e04f3.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Crypto Market Rates</h4>
-            <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">A real time auto-updating table that lists crypto currency exchange rates based on a configurable refresh interval. Pulls data from a <a href="https://liquality.io/">Liquality</a> API. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">VueJS, SCSS</p>
-          </div>
-        </div>
-        <div class="preview">
-          <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/liquality.png" />
-        </div>
-        <div class="links">
-          <a href="https://github.com/gg-1414/crypto-market-rates" class="btn black-btn" target="_blank">Github</a>
-          <a href="https://epic-lichterman-11a5f8.netlify.app/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Key-Moji</h4>
-             <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Interactive keyboard for faster typing of&nbsp;emojis. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">Ruby on Rails, React, SCSS</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/keymoji.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/key-moji.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://github.com/gg-1414/key-moji-fe" class="btn black-btn" target="_blank">Github</a>
-          <a href="http://key-moji.herokuapp.com/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Recognizer</h4>
-             <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Face recognition to detect user’s emotion and plays a song based on that&nbsp;emotion. Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">Ruby on Rails, HTML, CSS, JavaScript, Python (server)</p>
-          </div>
-        </div>
-        <div class="preview">
-          <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/recognizer.gif" />
-        </div>
-        <div class="links">
-          <a href="https://github.com/gg-1414/recognizer-fe" class="btn black-btn" target="_blank">Github FE</a>
-          <a href="https://github.com/gg-1414/recognizer-backend" class="btn white-btn" target="_blank">Github BE</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Hackathon</h4>
-             <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Brooklyn Tech Week Urban Blockchain Hackathon Winner&nbsp;(2018). Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">Solidity, React, CSS</p>
-          </div>
-        </div>
-        <div class="preview">
-          <img src="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/hackathon.gif"/>
-        </div>
-        <div class="links">
-          <a href="https://github.com/fodisi/dao-hackathon" class="btn black-btn" target="_blank">Github</a>
-          <a href="https://medium.com/@gg_gina/my-first-hackathon-experience-3df0c501f58c" class="btn white-btn" target="_blank">Blog</a>
-        </div>
-      </div>  
-
-      <div class="project">
-        <div class="content"> 
-          <div class="title">
-            <h4>Restaurant Site</h4>
-             <button class="display-btn">
-              <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18379 5.8131L12.6455 0.327027L14.0186 1.70628L8.55635 7.19235L7.19107 8.56373L0.327148 1.66915L1.69299 0.29834L7.18379 5.81366V5.8131Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
-          <div class="text collapsible-content">
-            <p class="description">Website redesign of the restaurant I used to work at. (Also the very first website I ever&nbsp;created). Design by <a target="_blank" href="https://gina-lee.com/">me</a>.</p>
-            <p class="stack">HTML, CSS, JavaScript</p>
-          </div>
-        </div>
-        <div class="preview">
-          <video src="./assets/media/modoo-preview.mp4" poster="https://gina-leee-portfolio.s3.us-east-2.amazonaws.com/modoo.png" muted autoplay loop>
-        </div>
-        <div class="links">
-          <a href="https://github.com/gg-1414/Modoo-website" class="btn black-btn" target="_blank">Github</a>
-          <a href="https://gg-1414.github.io/Modoo-website/" class="btn white-btn" target="_blank">Live Site</a>
-        </div>
-      </div>  
-    </div>
-  </section>
 
   <audio id="audio" controls controlsList="nodownload" crossorigin="anonymous"></audio>
   <canvas></canvas>

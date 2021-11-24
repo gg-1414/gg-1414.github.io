@@ -3,10 +3,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="stylesheets/css/index.css">
+  <script src="./javascript/collapsible_content.js"></script>
+  <script src="./javascript/audio.js"></script>
+  <script src="./javascript/modal.js"></script>
+  <script src="./javascript/index.js"></script>
   <title>Gina Lee | About</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DEQYBFV46"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3DEQYBFV46');
+  </script>
 </head>
-<body>
-  I am the about page
-  <a href="./index.html">Go back to home</a>
+<body class="light-theme modal-active">
+  <div class="background_image"></div>
+  <div id="modal-container" class="sketch-in">
+    <div class="modal-background">
+      <div class="modal">
+        <small>To get the full experience</small>
+        <h2>Play my playlist!</h2>
+        <p>You won't regret it.</p>
+        <div class="buttons">
+          <button class="btn black-btn" id="play-audio">Play</button>
+          <button class="btn white-btn" id="close-modal">Don't</button>
+        </div>
+        <small>*View on desktop to see some&nbsp;magic&nbsp;:)</small>
+        <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+          <rect x="0" y="0" fill="none" width="341" height="212" rx="3" ry="3"></rect>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h2 class="name">Gina Lee</h2>
+    <p class="title">
+      <span>Web Dev/Artist.</span>
+    </p>
+    <button id="toggle-theme" title="Toggle theme" alt="Toggle theme">
+    </button>
+    <ul class="socials-list">
+      <a href="./index.html">home</a>
+      <li><a href="mailto:ginalee1114@gmail.com" target="_blank">email</a></li>
+      <li><a href="https://github.com/gg-1414" target="_blank">github</a></li>
+      <li><a href="https://www.linkedin.com/in/gina-lee-00b940172/" target="_blank">linkedin</a></li>
+      <li><a href="https://gg-gina.medium.com/" target="_blank">blog</a></li>
+      <li><a href="https://rarible.com/gg_gina" target="_blank">nfts</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="about-me">
+      <div class="profile-images">
+        <!-- <img src="./assets/media/me.png" />
+        <img src="./assets/media/me-pink-hair.jpg" /> -->
+        <img src="./assets/media/me-central-park.png" />
+        <!-- <img src="./assets/media/bedstuy.jpg" /> -->
+      </div>
+
+      <div class="content">
+        <p>
+          Hello! My name is Gina and I am a freelance web developer and artist based in NYC.
+        </p>
+    
+        <p>
+          I love creating beautifully responsive and creative web apps, and experimenting with the two things that intrigue me the most: art and code. I’m passionate in the whole process, from blank canvas to end product.
+        </p>
+  
+        <p>
+          Currently I'm working on <a href="https://www.ethelsclub.com/">Ethel's Club</a>. 
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="audio" controls controlsList="nodownload" crossorigin="anonymous"></audio>
+  <canvas></canvas>
 </body>
 </html>

@@ -21,6 +21,32 @@ header {
   .name, .socials-list li {
     display: inline-block; 
   }
+
+  .name,
+  .title,
+  #toggle-theme {
+    position: relative;
+    overflow: hidden;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    &:before {
+      content: "";
+      height: 100%;
+      background: {
+        image: url('../../assets/media/perspective.jpg');
+        size: contain;
+      }
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .25;
+      filter: invert(1);
+    }
+  }
   
   .name {
     grid-area: name;
@@ -47,7 +73,7 @@ header {
     flex-direction: row; 
     align-items: center;
     height: 100%;
-    font-weight: normal;
+    // font-weight: normal;
     font-size: s(2); 
 
     @include media(xs-max) {
@@ -74,6 +100,7 @@ header {
       content: "🌞"; 
       font-size: s(4);
       height: s(4.25);
+      z-index: 0;
     }
   }
 

@@ -1,0 +1,21 @@
+section.about-me {
+  padding: 1rem; }
+  section.about-me p {
+    margin-top: 1rem; }
+  @media (min-width: 700px) {
+    section.about-me {
+      display: flex;
+      gap: 4rem; }
+      section.about-me .content {
+        margin-top: 4rem;
+        margin-right: 2rem; } }
+
+.profile-images img {
+  object-fit: contain;
+  width: 90%;
+  margin: 1rem auto; }
+@media (min-width: 700px) {
+  .profile-images img {
+    width: 100%; } }
+
+/*# sourceMappingURL=about.css.map */

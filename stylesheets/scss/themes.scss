@@ -33,6 +33,14 @@ body {
     header {
       &, #toggle-theme { background: $white; }
 
+      .name,
+      .title,
+      #toggle-theme {
+        &:before {
+          filter: invert(1);
+        }
+      }
+
       .title {
         border-left: 1px solid $black;
         border-right: 1px solid $black;
@@ -88,7 +96,15 @@ body {
     header {
       &, #toggle-theme { background: #0d0c0b; }
       
-      .name, .title, a { font-weight: 300; } 
+      // .name, .title, a { font-weight: 300; } 
+
+      .name,
+      .title,
+      #toggle-theme {
+        &:before {
+          filter: invert(0);
+        }
+      }
 
       .title {
         border-left: 1px solid $white;

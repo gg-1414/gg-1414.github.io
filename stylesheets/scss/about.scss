@@ -1,0 +1,43 @@
+@import 'tools.scss';
+@import 'colors.scss';
+
+section.about-me {
+  padding: 1rem;
+
+  p {
+    margin-top: 1rem;
+  }
+
+  @include media(sm-min) {
+    display: flex;
+    gap: 4rem;
+
+    .content {
+      margin-top: 4rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.profile-images {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  // > * {
+  //   flex: 1;
+  // }
+
+  img {
+    object-fit: contain;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  @include media(sm-min) {
+    img {
+      width: 100%;
+    }
+  }
+}
