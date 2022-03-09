@@ -61,7 +61,7 @@ function drawVisualization() {
     const totalBars = canvas.width * .14 
     
     for (let i = 0; i < totalBars; i++) {
-      barHeight = dataArray[i] * 2
+      barHeight = dataArray[i] * 1.3
 
       if (dataArray[i] > 210){ // pink
         r = 250
